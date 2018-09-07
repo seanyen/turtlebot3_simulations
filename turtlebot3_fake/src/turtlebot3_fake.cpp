@@ -22,7 +22,7 @@ Turtlebot3Fake::Turtlebot3Fake()
 : nh_priv_("~")
 {
   //Init fake turtlebot node
-  ROS_ASSERT(init());
+  init();
 }
 
 Turtlebot3Fake::~Turtlebot3Fake()
