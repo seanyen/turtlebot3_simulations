@@ -23,7 +23,8 @@ Turtlebot3Drive::Turtlebot3Drive()
 {
   //Init gazebo ros turtlebot3 node
   ROS_INFO("TurtleBot3 Simulation Node Init");
-  ROS_ASSERT(init());
+  bool init_result = init();
+  ROS_ASSERT(init_result);
 }
 
 Turtlebot3Drive::~Turtlebot3Drive()

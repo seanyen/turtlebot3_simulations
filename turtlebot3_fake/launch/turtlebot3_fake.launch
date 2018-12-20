@@ -3,7 +3,7 @@
 
   <param name="tb3_model" value="$(arg model)"/>
 
-  <include file="package://turtlebot3_bringup/launch/includes/description.launch.xml">
+  <include file="$(find turtlebot3_bringup)/launch/includes/description.launch.xml">
     <arg name="model" value="$(arg model)" />
   </include>
 
@@ -13,5 +13,5 @@
     <param name="publish_frequency" type="double" value="50.0" />
   </node>
 
-  <node name="rviz" pkg="rviz" type="rviz" args="-d package://turtlebot3_fake/rviz/turtlebot3_fake.rviz"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find turtlebot3_fake)/rviz/turtlebot3_fake.rviz"/>
 </launch>
